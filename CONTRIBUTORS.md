@@ -66,3 +66,5 @@
 - mani-aiml
 - Sindhura Palakodety
 - Bhuvan Annamreddi
+- Sparsh Wadhwa (SparshWadhwa)
+
