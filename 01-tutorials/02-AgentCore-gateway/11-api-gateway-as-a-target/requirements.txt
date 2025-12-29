@@ -11,4 +11,5 @@ bedrock-agentcore
 bedrock-agentcore-starter-toolkit>=0.1.21
 
 # Strands agents
-strands-agents
+strands-agents[openai]
+strands-agents-tools

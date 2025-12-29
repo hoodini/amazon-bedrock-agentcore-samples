@@ -3,7 +3,7 @@ ddgs
 boto3
 bedrock-agentcore
 bedrock-agentcore-starter-toolkit
-strands-agents[otel]
-strands-agents-tools
+strands-agents[openai]
+strands-agents[openai]
 mcp
 langfuse

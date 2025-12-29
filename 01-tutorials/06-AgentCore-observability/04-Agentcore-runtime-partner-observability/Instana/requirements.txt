@@ -4,5 +4,5 @@ boto3
 bedrock-agentcore
 bedrock-agentcore-starter-toolkit
 dotenv
-strands-agents[otel]
-strands-agents-tools
+strands-agents[openai]
+strands-agents[openai]

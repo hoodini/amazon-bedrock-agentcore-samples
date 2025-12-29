@@ -1,6 +1,6 @@
 # Core AgentCore and Strands dependencies
-strands-agents>=1.14.0
-strands-agents-tools
+strands-agents[openai]
+strands-agents[openai]
 bedrock-agentcore>=1.0.5
 
 # Browser automation (required by strands-agents-tools)

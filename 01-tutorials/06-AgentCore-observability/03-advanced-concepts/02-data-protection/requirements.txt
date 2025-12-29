@@ -1,5 +1,5 @@
-strands-agents[otel]
-strands-agents-tools
+strands-agents[openai]
+strands-agents[openai]
 uv
 boto3
 bedrock-agentcore

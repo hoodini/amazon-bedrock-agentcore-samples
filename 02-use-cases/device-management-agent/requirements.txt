@@ -11,8 +11,8 @@ requests>=2.31.0
 # Amazon Bedrock AgentCore dependencies
 bedrock-agentcore
 bedrock-agentcore-starter-toolkit
-strands-agents>=0.1.0
-strands-agents-tools>=0.1.0
+strands-agents[openai]
+strands-agents[openai]
 
 # Frontend web application dependencies
 fastapi==0.104.1

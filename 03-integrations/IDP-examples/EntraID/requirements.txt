@@ -1,8 +1,8 @@
 boto3
 bedrock-agentcore
 bedrock-agentcore-starter-toolkit
-strands-agents
-strands-agents-tools
+strands-agents[openai]
+strands-agents[openai]
 tavily-python
 uv
 jwt

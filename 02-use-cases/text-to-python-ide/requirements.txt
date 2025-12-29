@@ -6,4 +6,5 @@ python-multipart
 websockets
 pydantic
 python-dotenv
-strands-agents>=0.1.8
+strands-agents[openai]
+strands-agents-tools

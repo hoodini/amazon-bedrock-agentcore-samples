@@ -1,8 +1,8 @@
 boto3
 botocore
-strands-agents
-strands-agents-tools
-strands-agents-builder
+strands-agents[openai]
+strands-agents[openai]
+strands-agents[openai]
 bedrock-agentcore
 bedrock-agentcore-starter-toolkit
 requests>=2.31.0

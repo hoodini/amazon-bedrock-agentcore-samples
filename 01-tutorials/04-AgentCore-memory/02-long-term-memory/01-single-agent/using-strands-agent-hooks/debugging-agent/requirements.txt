@@ -5,5 +5,5 @@ python-dateutil>=2.8.0
 # Notebook support
 jupyter>=1.0.0
 ipywidgets>=8.0.0
-strands-agents
-strands-agents-tools
+strands-agents[openai]
+strands-agents[openai]

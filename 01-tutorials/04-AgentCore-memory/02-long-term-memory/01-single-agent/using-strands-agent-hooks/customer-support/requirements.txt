@@ -1,6 +1,6 @@
 boto3
-strands-agents
-strands-agents-tools
+strands-agents[openai]
+strands-agents[openai]
 ddgs
 bedrock-agentcore
 bedrock-agentcore-starter-toolkit==0.1.19

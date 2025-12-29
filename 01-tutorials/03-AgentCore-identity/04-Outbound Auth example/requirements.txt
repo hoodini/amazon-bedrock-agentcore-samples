@@ -1,6 +1,6 @@
-strands-agents
-strands-agents-tools
-strands-agents[litellm]
+strands-agents[openai]
+strands-agents[openai]
+strands-agents[openai]
 uv
 starlette
 uvicorn

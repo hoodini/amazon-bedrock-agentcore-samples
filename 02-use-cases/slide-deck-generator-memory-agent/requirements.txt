@@ -1,6 +1,6 @@
 # Core dependencies from samples
-strands-agents
-strands-agents-tools
+strands-agents[openai]
+strands-agents[openai]
 bedrock-agentcore-starter-toolkit
 bedrock-agentcore
 boto3>=1.34.0

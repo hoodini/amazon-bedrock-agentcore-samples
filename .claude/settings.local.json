@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(python convert_to_cohere.py:*)",
+      "Bash(git commit:*)",
+      "Bash(gh auth:*)",
+      "Bash(git push:*)",
+      "Bash(git remote:*)",
+      "Bash(gh repo create:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: Migrate all Amazon Bedrock models to Cohere LLM using Strands Agents SDK\n\nThis is a comprehensive migration from Amazon Bedrock to Cohere''s LLM models\nusing the Strands Agents SDK with OpenAI compatibility layer.\n\n## Changes Made:\n\n### 1. Automated Conversion Script\n- Created `convert_to_cohere.py` for automated project-wide migration\n- Script converts both Jupyter notebooks and requirements.txt files\n- Handles BedrockModel to OpenAIModel transformation\n- Removes Bedrock-specific features \\(guardrails\\)\n- Adds proper imports and environment variable handling\n\n### 2. Requirements Files \\(132 files converted\\)\n- Updated all requirements.txt to use `strands-agents[openai]`\n- Added `strands-agents-tools` dependency where needed\n- Maintained compatibility with existing dependencies\n\n### 3. Jupyter Notebooks \\(40+ notebooks converted\\)\n- Replaced `from strands.models.bedrock import BedrockModel` \n  with `from strands.models.openai import OpenAIModel`\n- Updated model initialization to use Cohere''s API endpoint:\n  * API endpoint: https://api.cohere.ai/compatibility/v1\n  * Default model: command-a-03-2025\n  * Configured with COHERE_API_KEY environment variable\n- Removed Bedrock-specific configurations:\n  * guardrail_identifier\n  * guardrail_version\n  * guardrailConfig\n\n### 4. Key Areas Modified:\n- Tutorials \\(01-tutorials/\\): All AgentCore runtime, gateway, identity, \n  memory, tools, and observability examples\n- Use Cases \\(02-use-cases/\\): Finance assistant, healthcare, customer support,\n  AWS operations, and all other use case implementations\n- Integrations \\(03-integrations/\\): Framework integrations, observability,\n  vector stores, and IDP examples\n- Infrastructure as Code \\(04-infrastructure-as-code/\\): Both CDK and \n  Terraform agent code\n- Blueprints \\(05-blueprints/\\): Travel and shopping concierge agents\n\n## Migration Benefits:\n- ✅ Uses open-source Strands Agents SDK from AWS community\n- ✅ Compatible with Cohere''s latest models \\(command-a-03-2025\\)\n- ✅ Leverages OpenAI compatibility layer for easy integration\n- ✅ Removes dependency on AWS Bedrock service\n- ✅ Maintains all existing functionality and patterns\n\n## Setup Instructions:\n1. Set environment variable: `export COHERE_API_KEY=\"your-api-key\"`\n2. Get API key from: https://dashboard.cohere.com/\n3. Install dependencies: `pip install -r requirements.txt`\n4. Run notebooks as usual\n\n## Documentation:\nBased on Strands Agents community documentation:\nhttps://strandsagents.com/latest/documentation/docs/community/model-providers/cohere/\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git config:*)",
+      "Bash(git lfs fetch:*)",
+      "Bash(git lfs push:*)",
+      "Bash(git lfs untrack:*)",
+      "Bash(git rm:*)"
+    ]
+  }
+}

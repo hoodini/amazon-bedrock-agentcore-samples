@@ -1,5 +1,5 @@
-strands-agents
-strands-agents-tools
+strands-agents[openai]
+strands-agents[openai]
 google-api-python-client 
 google-auth-httplib2 
 google-auth-oauthlib

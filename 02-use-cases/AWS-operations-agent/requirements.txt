@@ -20,8 +20,8 @@ typing-inspection==0.4.1
 typing_extensions==4.14.1
 urllib3==2.6.0
 uvicorn==0.35.0
-strands-agents==1.0.1
-strands-agents-tools
+strands-agents[openai]
+strands-agents[openai]
 bedrock-agentcore-starter-toolkit
 requests
 mcp

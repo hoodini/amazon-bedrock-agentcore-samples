@@ -1,6 +1,7 @@
-strands-agents
+strands-agents[openai]
 boto3
 bedrock-agentcore
 bedrock-agentcore-starter-toolkit==0.1.24
 PyJWT
 cryptography
+strands-agents-tools

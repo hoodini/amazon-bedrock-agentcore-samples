@@ -1,5 +1,5 @@
-strands-agents
-strands-agents-tools
+strands-agents[openai]
+strands-agents[openai]
 uv
 bedrock-agentcore
 bedrock-agentcore-starter-toolkit

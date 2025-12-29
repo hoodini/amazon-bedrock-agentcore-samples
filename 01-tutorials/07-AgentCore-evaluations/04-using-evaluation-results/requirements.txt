@@ -1,8 +1,8 @@
 # Evaluation Analyzer Dependencies
 
 # Strands Agents SDK
-strands-agents>=0.1.0
-strands-agents-tools>=0.1.0
+strands-agents[openai]
+strands-agents[openai]
 
 # Jupyter notebook support
 jupyter>=1.0.0

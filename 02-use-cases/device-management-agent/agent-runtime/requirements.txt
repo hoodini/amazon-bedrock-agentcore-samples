@@ -5,5 +5,5 @@ boto3==1.39.7
 python-dotenv>=1.0.0
 bedrock-agentcore
 bedrock-agentcore-starter-toolkit
-strands-agents>=0.1.0
-strands-agents-tools>=0.1.0
+strands-agents[openai]
+strands-agents[openai]

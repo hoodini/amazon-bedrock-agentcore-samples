@@ -1,4 +1,5 @@
-strands-agents
+strands-agents[openai]
 boto3>=1.40.0
 botocore>=1.40.0
 bedrock-agentcore
+strands-agents-tools

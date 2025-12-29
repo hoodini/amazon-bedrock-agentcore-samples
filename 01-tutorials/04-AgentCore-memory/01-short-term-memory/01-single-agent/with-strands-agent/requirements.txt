@@ -1,6 +1,6 @@
-strands-agents 
+strands-agents[openai]
 duckduckgo-search
-strands-agents-tools
+strands-agents[openai]
 uv
 bedrock-agentcore
 ddgs
