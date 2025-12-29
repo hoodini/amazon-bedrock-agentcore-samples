@@ -8,3 +8,4 @@ pydantic
 python-dotenv
 strands-agents[openai]
 strands-agents-tools
+openai==1.59.7

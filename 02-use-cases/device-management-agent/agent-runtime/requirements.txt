@@ -7,3 +7,4 @@ bedrock-agentcore
 bedrock-agentcore-starter-toolkit
 strands-agents[openai]
 strands-agents[openai]
+openai==1.59.7

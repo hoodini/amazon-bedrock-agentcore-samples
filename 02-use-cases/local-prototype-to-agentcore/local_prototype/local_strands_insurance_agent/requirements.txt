@@ -16,3 +16,4 @@ requests>=2.31.0
 # Logging and formatting
 rich>=10.0.0  # Optional: For enhanced console output
 strands-agents-tools
+openai==1.59.7

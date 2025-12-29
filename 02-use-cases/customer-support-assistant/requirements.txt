@@ -11,3 +11,4 @@ bedrock-agentcore
 bedrock-agentcore-starter-toolkit
 botocore
 boto3
+openai==1.59.7

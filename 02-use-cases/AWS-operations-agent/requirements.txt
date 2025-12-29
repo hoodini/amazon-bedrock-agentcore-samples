@@ -26,3 +26,4 @@ bedrock-agentcore-starter-toolkit
 requests
 mcp
 httpx
+openai==1.59.7

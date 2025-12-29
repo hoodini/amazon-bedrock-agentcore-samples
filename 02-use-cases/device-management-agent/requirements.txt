@@ -25,3 +25,4 @@ python-jose==3.4.0
 itsdangerous==2.1.2
 httpx==0.24.1
 starlette-session==0.4.3
+openai==1.59.7

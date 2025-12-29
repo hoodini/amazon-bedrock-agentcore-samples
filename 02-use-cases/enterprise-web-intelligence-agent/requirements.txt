@@ -3,4 +3,4 @@ rich
 matplotlib
 seaborn
 fastapi
-uvicorn
+uvicornopenai==1.59.7
