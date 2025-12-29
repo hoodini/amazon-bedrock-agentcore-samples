@@ -111,11 +111,31 @@ Or add it to a `.env` file:
 COHERE_API_KEY=your-api-key-here
 ```
 
-## Running the Notebook
+## Running the Notebooks
+
+### Option 1: Google Colab (Recommended for Quick Start)
+
+1. Upload the Cohere version notebook to [Google Colab](https://colab.research.google.com/)
+2. The notebook will automatically install all required dependencies in the first cell
+3. Set your Cohere API key:
+   ```python
+   import os
+   os.environ['COHERE_API_KEY'] = 'your-api-key-here'
+   ```
+   Or use Colab's Secrets feature (🔑 icon in left sidebar)
+4. Run all cells
+
+**Note**: All Cohere notebooks are Colab-ready with automatic dependency installation!
+
+### Option 2: Local Jupyter
 
 1. Install dependencies:
    ```bash
-   pip install --force-reinstall -U -r requirements.txt
+   pip install -r colab_requirements.txt
+   ```
+   Or use the full requirements:
+   ```bash
+   pip install -r requirements.txt
    ```
 
 2. Set your Cohere API key (see above)

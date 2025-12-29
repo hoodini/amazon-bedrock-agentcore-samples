@@ -6,6 +6,10 @@ requirements.txt installation with direct pip install commands.
 
 import json
 import sys
+import io
+
+# Set UTF-8 encoding for stdout
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # The installation cell content
 COLAB_INSTALL_CELL = """# Install required dependencies for Google Colab
@@ -57,6 +61,11 @@ def update_notebook(notebook_path):
 
 
 def main():
+    import os
+
+    # Get the directory where this script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
     notebooks = [
         'lab1-develop_a_personal_budget_assistant_strands_agent_cohere.ipynb',
         'lab2-build_multi_agent_workflows_with_strands_cohere.ipynb',
@@ -65,7 +74,8 @@ def main():
 
     for notebook in notebooks:
         try:
-            update_notebook(notebook)
+            notebook_path = os.path.join(script_dir, notebook)
+            update_notebook(notebook_path)
         except Exception as e:
             print(f"  ✗ Error updating {notebook}: {e}", file=sys.stderr)
             return 1
