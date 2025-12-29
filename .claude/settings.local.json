@@ -14,7 +14,10 @@
       "Bash(git lfs push:*)",
       "Bash(git lfs untrack:*)",
       "Bash(git rm:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(git remote add:*)",
+      "Bash(python update_notebooks_for_colab.py:*)",
+      "Bash(git filter-branch:*)"
     ]
   }
 }
