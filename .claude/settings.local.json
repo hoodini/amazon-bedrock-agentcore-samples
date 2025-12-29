@@ -13,7 +13,8 @@
       "Bash(git lfs fetch:*)",
       "Bash(git lfs push:*)",
       "Bash(git lfs untrack:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(git checkout:*)"
     ]
   }
 }

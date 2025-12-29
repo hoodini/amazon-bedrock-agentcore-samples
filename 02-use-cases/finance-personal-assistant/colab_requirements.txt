@@ -1,0 +1,8 @@
+# Essential requirements for Google Colab
+strands-agents[openai]==1.7.1
+strands-agents-tools==0.2.6
+openai==1.59.7
+yfinance==0.2.65
+matplotlib==3.10.6
+pandas==2.3.2
+pydantic==2.11.7
