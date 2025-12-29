@@ -1,16 +1,31 @@
 # Cohere LLM Migration Guide
 
-This guide explains how to use the personal budget assistant with Cohere's LLM instead of Amazon Bedrock.
+This guide explains how to use the financial assistant labs with Cohere's LLM instead of Amazon Bedrock.
 
 ## Overview
 
-The Strands Agents SDK supports Cohere models through the OpenAI compatibility layer. This allows you to leverage Cohere's powerful language models while maintaining the same agent architecture.
+The Strands Agents SDK supports Cohere models through the OpenAI compatibility layer. This allows you to leverage Cohere's powerful language models while maintaining the same agent architecture across all three labs.
 
 ## Files
 
+### Lab 1: Budget Assistant
 - **Original Bedrock Version**: `lab1-develop_a_personal_budget_assistant_strands_agent.ipynb`
 - **New Cohere Version**: `lab1-develop_a_personal_budget_assistant_strands_agent_cohere.ipynb`
 - **Standalone Script**: `budget_agent_cohere.py`
+
+### Lab 2: Multi-Agent Workflows
+- **Original Bedrock Version**: `lab2-build_multi_agent_workflows_with_strands.ipynb`
+- **New Cohere Version**: `lab2-build_multi_agent_workflows_with_strands_cohere.ipynb`
+- **Standalone Scripts**:
+  - `financial_analysis_agent_cohere.py`
+  - `main_cohere.py`
+
+### Lab 3: Deployment
+- **Original Bedrock Version**: `lab3-deploy_agents_on_amazon_bedrock_agentcore.ipynb` (AWS-specific)
+- **New Cohere Version**: `lab3-deploy_cohere_agents_locally.ipynb` (Production deployment guide)
+- **Standalone Scripts**:
+  - `app.py` (FastAPI application)
+  - `Dockerfile` (Container configuration)
 
 ## Key Changes
 
@@ -175,14 +190,37 @@ print(os.environ.get("COHERE_API_KEY"))
 - Ensure `base_url` is set to `https://api.cohere.ai/compatibility/v1`
 - Check that `stream_options` is set to `None` in params
 
+## Lab-Specific Notes
+
+### Lab 1: Budget Assistant
+- Single agent with budgeting tools
+- Structured output for financial reports
+- Async streaming support
+
+### Lab 2: Multi-Agent Workflows
+- Orchestrator pattern with two specialized agents
+- Budget agent + Financial analysis agent
+- Agent-as-tool wrapper pattern
+- Complex multi-agent queries
+
+### Lab 3: Deployment
+- **Important**: AWS AgentCore is AWS Bedrock-specific
+- Cohere version focuses on production deployment alternatives
+- Includes FastAPI application with streaming
+- Docker containerization guide
+- Multi-cloud deployment options (GCP, AWS, Azure)
+- Kubernetes deployment manifests
+
 ## Next Steps
 
-Once you have the basic agent working with Cohere, you can:
+Once you have the agents working with Cohere, you can:
 
-1. Experiment with different Cohere models
-2. Adjust temperature and other parameters
-3. Implement custom content filtering
-4. Build multi-agent systems (see subsequent labs)
+1. **Lab 1**: Experiment with different Cohere models and parameters
+2. **Lab 2**: Build custom multi-agent workflows for your use case
+3. **Lab 3**: Deploy to production using cloud platforms
+4. Implement custom content filtering and safety measures
+5. Add authentication and rate limiting
+6. Set up monitoring and observability
 
 ## Resources
 
